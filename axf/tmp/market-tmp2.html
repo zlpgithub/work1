@@ -1,0 +1,16 @@
+<script type="text/html" id="market-figures">
+			<%for(var i in list){%>
+					<figure>
+						<a href="#"><img class="lazy" data-original=<%=list[i].img%>></a>
+						<div class="bt">
+							<p><%=list[i].name%></p>
+							<p><span>精选</span></p>
+							<p><%=list[i].specifics%></p>
+							<p><span>¥<%=list[i].partner_price%></span><span>¥<%=list[i].market_price%></span></p>
+							<div class="market-goods-count">
+									<i class="market-cancel"></i><i class="market-count">1</i><i class="market-buy"></i>
+							</div>
+						</div>
+					</figure>
+				<%}%>
+	</script>
