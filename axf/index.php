@@ -1,3 +1,10 @@
+<?php
+require_once "jssdk.php";
+// appId  和 秘钥
+$jssdk = new JSSDK("wx96022b9e2f37e2f4", "acca5fc1063b72de55bdcc89313c7e13");
+$signPackage = $jssdk->GetSignPackage();
+?>
+
 <html>
 	<head>
 		<title>首页</title>
@@ -132,5 +139,17 @@ img{
     window.onresize =function(){
       document.documentElement.style.fontSize = innerWidth/4.14 + "px";
     }
+	</script>
+	<script type="text/javascript">
+		 wx.config({
+    debug: true,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+     jsApiList: [
+        
+      ]
+  });
 	</script>
 </html>
