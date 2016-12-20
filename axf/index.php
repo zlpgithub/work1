@@ -184,6 +184,7 @@ img{
       ]
   });
 $("#mapbutton").on("tap",function(){
+	console.log(1);
 	var latitude = 0;
 var longitude = 0;
 	wx.getLocation({
