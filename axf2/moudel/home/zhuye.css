@@ -1,0 +1,663 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-family: "microsoft yahei,微软雅黑";
+	font-size: 0.14rem;
+	background: #efefef;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	/*删除图片默认的下边距*/
+	vertical-align: top;
+}
+/*头部地址栏*/
+/*此处有个bug*/
+.home-address-tp2{
+	height:0.44rem;
+}
+.home-address-tp{
+	display: flex;
+	height: 0.59rem;
+	background-color: #ffd600;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+.home-address-tp p{
+	margin: auto;
+	font-size: 0.17rem;
+	font-weight: bold;
+}
+.home-address-tp p span{
+	font-size: 0.14rem;
+}
+.home-address-tp .sou{
+	background: url(../../img/a1.png) no-repeat 0.05rem 0;
+	background-size:0.25rem 0.25rem;
+	padding-top: 0.3rem;
+	margin-right: 0.05rem;
+}
+/*图片轮播部分*/
+.lb .slider{
+	height: 1.54rem;
+}
+.lb img{
+	width: 100%;
+}
+/*主页分类*/
+.type{
+	margin-top: 0.14rem;
+	height: 1.15rem;
+	display: flex;
+	background: #fff;
+
+}
+.type a{
+	flex:1;
+	margin: auto;
+	background: url(../../img/a2.png) no-repeat center top;
+	background-size: 0.7rem 0.6rem;
+	padding-top: 0.63rem;
+	text-align: center;
+	color: #000;
+	font-size: 0.16rem;
+}
+.type a:nth-of-type(2){
+	background: url(../../img/a3.png) no-repeat center top;
+	background-size: 0.7rem 0.6rem;
+}
+.type a:nth-of-type(3){
+	background: url(../../img/a4.png) no-repeat center top;
+	background-size: 0.7rem 0.6rem;
+}
+.type a:nth-of-type(4){
+	background: url(../../img/a5.png) no-repeat center top;
+	background-size: 0.7rem 0.6rem;
+}
+/*酸奶区域*/
+.suan{
+	width: 100%;
+	margin-top: 0.14rem;
+	/*后期看不设高度可以搞吗？*/
+	height: 1.8rem;
+}
+.suan li{
+	border-right: 1px solid #e0e0e0;
+	float: left;
+	width: 33.3%;
+	height: 1.8rem;
+	background: url(../../img/a6.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.suan li:nth-of-type(2){
+	background: url(../../img/a7.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.suan li:last-of-type{
+	background: url(../../img/a8.jpg) no-repeat;
+	background-size: 100% 100%;
+	border: none;
+}
+/*便利店b*/
+.fast{
+	/*清浮动部分*/
+	clear: both;
+	background: #fff;
+	margin-top: 0.14rem;
+	/*后期看一下不设高可以搞不*/
+	height: 4.3rem;
+}
+.fast-logo{
+	width: 100%;
+	height: 0.66rem;
+	background: url(../../img/a9.png);
+	background-size: 100% 100%;
+}
+.re{
+	width: 100%;
+	height: 0.76rem;
+	display: flex;
+	justify-content: space-around;
+}
+.re p:first-child{
+	flex:1;
+	margin-left: 0.12rem;
+	background: url(../../img/re.png);
+	background-size: 100% 100%;
+}
+.re p:last-child{
+	flex:1;
+	margin: 0 0.12rem;
+	background: url(../../img/tian.png);
+	background-size: 100% 100%;
+}
+.fast-fruit{
+	display: flex;
+	/*width: 100%;*/
+	/*height: 1.18rem;*/
+	padding: 0.2rem 0;
+}
+.fast-fruit a{
+	flex:1;
+	/*display: block;
+	width: 25%;
+	float: left;*/
+	color: #000;
+	text-align: center;
+	font-size: 0.16rem;
+	background: url(../../img/a10.png) no-repeat center top;
+	/*这个地方的尺寸有问题，后期解决一下*/
+	background-size: auto 0.6rem;
+	padding-top: 0.64rem;
+}
+.fast-fruit a:nth-of-type(2){
+	background: url(../../img/a11.png) no-repeat center top;
+	
+	background-size: auto 0.6rem;
+}
+.fast-fruit a:nth-of-type(3){
+	background: url(../../img/a12.png) no-repeat center top;
+	
+	background-size: auto 0.6rem;
+}
+.fast-fruit a:nth-of-type(4){
+	background: url(../../img/a13.png) no-repeat center top;
+	
+	background-size: auto 0.6rem;
+}
+.fast-cy{
+	width: 100%;
+	float: left;
+}
+.fast-cy a{
+	display: block;
+	width: 50%;
+	height: 0.83rem;
+	float: left;
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	background: url(../../img/a13.jpg);
+	background-size: 100% 100%;
+}
+.fast-cy a:nth-of-type(2){
+	background: url(../../img/a14.jpg);
+	background-size: 100% 100%;
+}
+.fast-cy a:nth-of-type(3){
+	background: url(../../img/a17.jpg);
+	background-size: 100% 100%;
+}
+.fast-cy a:nth-of-type(4){
+	background: url(../../img/a18.png);
+	background-size: 100% 100%;
+}
+
+
+/*优选水果*/
+.fruit{
+	clear: both;
+	background: #fff;
+	margin-top: 0.14rem;
+}
+.fruit-tp{
+	clear: both;
+	height: 0.52rem;
+	width: 100%;
+
+}
+.fruit-tp p{
+	margin-top: 0.17rem;
+	margin-left: 0.12rem;
+	width: 0.94rem;
+	border-left: 0.1rem solid #f38631;
+	float: left;
+	text-indent: 0.1rem;
+	font-size: 0.17rem;
+	font-weight:bold;
+	color: #f38631;
+}
+.fruit-tp i{
+	margin-top: 0.17rem;
+	font-style: normal;
+	font-size: 0.17rem;
+	display: block;
+	float: right;
+	/*width: 0.51rem;*/
+	background: url(../../img/line.png) no-repeat right center;
+	background-size:0.2rem 0.17rem;
+	color: #999999;
+	/*这个地方后期看一下*/
+	padding-right: 0.3rem;
+}
+.fruit-banner{
+	width: 3.89rem;
+	height: 0.98rem;
+	margin-left: 0.13rem;
+	margin-bottom: 0.14rem;
+	/*background: url(../img/a19.jpg) no-repeat;
+	background-size: auto 0.98rem;*/
+}
+.fruit-banner img{
+	width: 3.89rem;
+	height: 0.98rem;
+}
+/*--购物车部分--*/
+.fruit-buy{
+	margin: 0.01rem 0;
+	display: flex;
+	width: 100%;
+}
+/*不能完全用flex做，后期有时间用flex实现一下*/
+.fruit-buy figure{
+	width: 33%;
+	border-right: 1px solid #e0e0e0;
+	padding: 0 0.064rem;
+}
+.fruit-buy figure a img{
+	width: 1.24rem;
+	height: 1.24rem;
+}
+.home-bt{
+	/*overflow: hidden;*/
+	line-height: 0.24rem;
+	position: relative;
+}
+.home-bt p:first-of-type{
+	font-size: 0.15rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.home-bt p:nth-of-type(2) span{
+	color: red;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 0.07rem;
+	font-size: 0.12rem;
+	padding: 0.01rem 0.03rem;
+	line-height: 0.15rem;
+}
+.home-bt p:nth-of-type(3){
+	font-size: 0.16rem;
+	color: grey;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.home-bt p:nth-of-type(4) span:last-child{
+	color: grey;
+	text-decoration: line-through;
+	font-size: 0.15rem;
+}
+.home-bt p:nth-of-type(4) span:first-child{
+	color: red;
+	text-decoration: none;
+	font-size: 0.15rem;
+	margin-right: 0.05rem;
+}
+.fruit-buy figure:last-child{
+	border: none;
+}
+/*.fruit-buy figure:nth-child(2) a{
+	background-image: url(../img/a21.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+.fruit-buy figure:last-child a{
+	background-image: url(../img/a23.png);
+	background-size: 1.24rem 1.24rem;
+}*/
+.home-bt i{
+	position: absolute;
+	right: 0;
+	bottom: 0.05rem;
+	display: inline-block;
+	width: 0.35rem;
+	height: 0.35rem;
+	border:1px solid #ffbe89;
+	border-radius: 50%;
+	background-color: red;
+	background-image: url(../../img/ja.png);
+	/*background-size的实现方法*/
+	background-size: 200% 100%;
+	background-position: right center;
+}
+/*牛奶面包*/
+.milk{
+	clear: both;
+	background: #fff;
+	margin-top: 0.14rem;
+}
+.milk-tp{
+	clear: both;
+	height: 0.52rem;
+	width: 100%;
+}
+.milk-tp p{
+	margin-top: 0.17rem;
+	margin-left: 0.12rem;
+	width: 0.94rem;
+	border-left: 0.1rem solid #20b1fa;
+	float: left;
+	text-indent: 0.1rem;
+	font-size: 0.17rem;
+	font-weight:bold;
+	color: #20b1fa;
+}
+.milk-tp i{
+	margin-top: 0.17rem;
+	font-style: normal;
+	font-size: 0.17rem;
+	display: block;
+	float: right;
+	/*width: 0.51rem;*/
+	background: url(../../img/line.png) no-repeat right center;
+	background-size:0.2rem 0.17rem;
+	color: #999999;
+	/*这个地方后期看一下*/
+	padding-right: 0.3rem;
+}
+.milk-banner{
+	margin-left: 0.13rem;
+	margin-bottom: 0.14rem;
+	height: 0.98rem;
+	background: url(../../img/milk.jpg) no-repeat;
+	background-size: auto 0.98rem;
+}
+.milk-buy{
+	margin: 0.01rem 0;
+	display: flex;
+	width: 100%;
+}
+.milk-buy figure{
+	width: 33%;
+	border-right: 1px solid #e0e0e0;
+	padding: 0 0.064rem;
+}
+.milk-buy figure a{
+	width: 1.24rem;
+	height: 1.24rem;
+	display: block;
+	background-image: url(../../img/shousi.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+.bt{
+	/*overflow: hidden;*/
+	line-height: 0.24rem;
+	position: relative;
+}
+.bt p:first-of-type{
+	font-size: 0.15rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bt p:nth-of-type(2) span{
+	color: red;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 0.07rem;
+	font-size: 0.12rem;
+	padding: 0.01rem 0.03rem;
+	line-height: 0.15rem;
+}
+.bt p:nth-of-type(3){
+	font-size: 0.16rem;
+	color: grey;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bt p:nth-of-type(4) span:last-child{
+	color: grey;
+	text-decoration: line-through;
+	font-size: 0.15rem;
+}
+.bt p:nth-of-type(4) span:first-child{
+	color: red;
+	text-decoration: none;
+	font-size: 0.15rem;
+	margin-right: 0.05rem;
+}
+.milk-buy figure:last-child{
+	border: none;
+}
+.milk-buy figure:nth-child(2) a{
+	background-image: url(../../img/sangshen.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+.milk-buy figure:last-child a{
+	background-image: url(../../img/youji.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+/*卤味熟食*/
+.shu{
+	clear: both;
+	background: #fff;
+	margin-top: 0.14rem;
+}
+.shu-tp{
+	clear: both;
+	height: 0.52rem;
+	width: 100%;
+}
+.shu-tp p{
+	margin-top: 0.17rem;
+	margin-left: 0.12rem;
+	width: 0.94rem;
+	border-left: 0.1rem solid #7b4d03;
+	float: left;
+	text-indent: 0.1rem;
+	font-size: 0.17rem;
+	font-weight:bold;
+	color: #7b4d03;
+}
+.shu-tp i{
+	margin-top: 0.17rem;
+	font-style: normal;
+	font-size: 0.17rem;
+	display: block;
+	float: right;
+	/*width: 0.51rem;*/
+	background: url(../../img/line.png) no-repeat right center;
+	background-size:0.2rem 0.17rem;
+	color: #999999;
+	/*这个地方后期看一下*/
+	padding-right: 0.3rem;
+}
+.shu-banner{
+	margin-left: 0.13rem;
+	margin-bottom: 0.14rem;
+	height: 0.98rem;
+	background: url(../../img/ya.jpg) no-repeat;
+	background-size: auto 0.98rem;
+}
+.shu-buy{
+	margin: 0.01rem 0;
+	display: flex;
+	width: 100%;
+}
+.shu-buy figure{
+	width: 33%;
+	border-right: 1px solid #e0e0e0;
+	padding: 0 0.064rem;
+}
+.shu-buy figure a{
+	width: 1.24rem;
+	height: 1.24rem;
+	display: block;
+	background-image: url(../../img/yasuogu.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+.bt{
+	/*overflow: hidden;*/
+	line-height: 0.24rem;
+	position: relative;
+}
+.bt p:first-of-type{
+	font-size: 0.15rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bt p:nth-of-type(2) span{
+	color: red;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 0.07rem;
+	font-size: 0.12rem;
+	padding: 0.01rem 0.03rem;
+	line-height: 0.15rem;
+}
+.bt p:nth-of-type(3){
+	font-size: 0.16rem;
+	color: grey;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bt p:nth-of-type(4) span:last-child{
+	color: grey;
+	text-decoration: line-through;
+	font-size: 0.15rem;
+}
+.bt p:nth-of-type(4) span:first-child{
+	color: red;
+	text-decoration: none;
+	font-size: 0.15rem;
+	margin-right: 0.05rem;
+}
+.shu-buy figure:last-child{
+	border: none;
+}
+.shu-buy figure:nth-child(2) a{
+	background-image: url(../../img/niurou.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+.shu-buy figure:last-child a{
+	background-image: url(../../img/doufu.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+/*饮料酒水*/
+.drink{
+	clear: both;
+	background: #fff;
+	margin-top: 0.14rem;
+}
+.drink-tp{
+	clear: both;
+	height: 0.52rem;
+	width: 100%;
+}
+.drink-tp p{
+	margin-top: 0.17rem;
+	margin-left: 0.12rem;
+	width: 0.94rem;
+	border-left: 0.1rem solid #ff3319;
+	float: left;
+	text-indent: 0.1rem;
+	font-size: 0.17rem;
+	font-weight:bold;
+	color: #ff3319;
+}
+.drink-tp i{
+	margin-top: 0.17rem;
+	font-style: normal;
+	font-size: 0.17rem;
+	display: block;
+	float: right;
+	/*width: 0.51rem;*/
+	background: url(../../img/line.png) no-repeat right center;
+	background-size:0.2rem 0.17rem;
+	color: #999999;
+	/*这个地方后期看一下*/
+	padding-right: 0.3rem;
+}
+.drink-banner{
+	margin-left: 0.13rem;
+	margin-bottom: 0.14rem;
+	height: 0.98rem;
+	background: url(../../img/drink.jpg) no-repeat;
+	background-size: auto 0.98rem;
+}
+.drink-buy{
+	margin: 0.01rem 0;
+	display: flex;
+	width: 100%;
+}
+.drink-buy figure{
+	width: 33%;
+	border-right: 1px solid #e0e0e0;
+	padding: 0 0.064rem;
+}
+.drink-buy figure a{
+	width: 1.24rem;
+	height: 1.24rem;
+	display: block;
+	background-image: url(../../img/yasuogu.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+.bt{
+	/*overflow: hidden;*/
+	line-height: 0.24rem;
+	position: relative;
+}
+.bt p:first-of-type{
+	font-size: 0.15rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bt p:nth-of-type(2) span{
+	color: red;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 0.07rem;
+	font-size: 0.12rem;
+	padding: 0.01rem 0.03rem;
+	line-height: 0.15rem;
+}
+.bt p:nth-of-type(3){
+	font-size: 0.16rem;
+	color: grey;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bt p:nth-of-type(4) span:last-child{
+	color: grey;
+	text-decoration: line-through;
+	font-size: 0.15rem;
+}
+.bt p:nth-of-type(4) span:first-child{
+	color: red;
+	text-decoration: none;
+	font-size: 0.15rem;
+	margin-right: 0.05rem;
+}
+.drink-buy figure:last-child{
+	border: none;
+}
+.drink-buy figure:nth-child(2) a{
+	background-image: url(../../img/niurou.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+.drink-buy figure:last-child a{
+	background-image: url(../../img/doufu.jpg);
+	background-size: 1.24rem 1.24rem;
+}
+/*零食欢乐购*/
+

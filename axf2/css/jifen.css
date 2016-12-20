@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-family: "microsoft yahei,微软雅黑";
+	font-size: 0.14rem;
+	background: #efefef;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	/*删除图片默认的下边距*/
+	vertical-align: top;
+}
+/*头部*/
+.intergral-top{
+	height: 0.59rem;
+	line-height: 0.58rem;
+	border-bottom: 1px solid #e0e0e0;
+	background: url(../img/zuo.png) no-repeat 0.17rem center;
+	background-size: 0.15rem 0.25rem;
+	background-color: #f9fafd;
+	text-indent: 1.53rem;
+	font-size: 0.17rem;
+}
+.cartoon{
+	height: 2.05rem;
+	background: #fff;
+}
+.intergral-explain{
+	margin-bottom: 0.13rem;
+	background: #fff;
+	height: 0.86rem;
+	width: 100%;
+	display: flex;
+}
+.intergral-explain a{
+	display: block;
+	flex:1;
+	background: url(../img/jifen.png) no-repeat center 0.13rem;
+	background-size: 0.31rem 0.31rem;
+	padding-top: 0.56rem;
+	font-size: 0.15rem;
+	color: #999999;
+	text-align: center;
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	
+}
+.ticket{
+width: 100%;
+background-color:#fff;
+}
+/*为什么给a加背景加不上？*/
+.ticket a{
+	width: 50%;
+	display: block;
+	float: left;
+	background: url(../img/ticket.jpg) no-repeat center 0.3rem;
+	background-size:2rem 0.69rem;
+	padding-top:1.3rem;
+	color: #000;
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+.ticket a p{
+	line-height: 0.3rem;
+	margin-left: 0.13rem;
+}
+.ticket a p:last-child{
+	color: red;
+}
+.ticket::after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.ticket a:nth-of-type(2){
+	background: url(../img/5.jpg) no-repeat center 0.3rem;
+	background-size:2rem 0.69rem;
+}
+.ticket a:nth-of-type(3){
+	background: url(../img/8.jpg) no-repeat center 0.3rem;
+	background-size:2rem 0.69rem;
+}
+.ticket a:nth-of-type(4){
+	background: url(../img/10.jpg) no-repeat center 0.3rem;
+	background-size:2rem 0.69rem;
+}

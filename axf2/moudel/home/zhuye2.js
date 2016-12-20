@@ -14,7 +14,8 @@
    });	
 	//主页购物车部分
 	var m=0;
-	$(".buy").on("tap",function(e){
+	//有个冲突的地方，后期解决吧
+	$(".home-buy").on("tap",function(e){
 		e = e||window.event;
 		m++;
 		var s = $(this).parent().prev().find("img").clone();
@@ -25,7 +26,7 @@
 		var y2 = $("#bubble").offset().top;
 		// 要加上px
 		$("#ani").html("@keyframes fly{from{left:"+x1+"px;top:"+y1+"px;width:1.24rem;height:1.24rem;border-radius:50%}to{left:"+x2+"px;top:"+y2+"px;width:10px;height:10px}}");
-	
+
 		s.css({
 			"position":"absolute",
 			"left":x1+"px",
@@ -44,7 +45,7 @@
 			"url":$(this).parent().prev().find("img").attr("src"),
 			"name":$(this).prev().prev().prev().prev().html(),
 			"price":$(this).prev().children().eq(0).html(),
-			"num":""+num
+			"num":num
 				}]
 			};
 			localStorage.setItem("shoppinglist",""+JSON.stringify(jsonstr));
@@ -55,7 +56,8 @@
 			var result = false;
 			for(var i=0;i<productlist.length;i++){
 				if(productlist[i].id==$(this).parent().parent().attr("id")){
-					num+=1;
+					//改变购物车中的物品的数量
+					productlist[i].num=productlist[i].num+1;
 					result = true;
 				}
 				
@@ -66,7 +68,7 @@
 			"url":$(this).parent().prev().find("img").attr("src"),
 			"name":$(this).prev().prev().prev().prev().html(),
 			"price":$(this).prev().children().eq(0).html(),
-			"num":""+num
+			"num":num
 				});
 			}
 			localStorage.setItem("shoppinglist",""+JSON.stringify(jsonstr));
@@ -84,7 +86,6 @@
 				 	$(".bubble").css("animation","");
 				 	clearInterval(t);
 				 }
-				 
 			});
 		});
 		

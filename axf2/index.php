@@ -4,7 +4,6 @@ require_once "jssdk.php";
 $jssdk = new JSSDK("wx96022b9e2f37e2f4", "acca5fc1063b72de55bdcc89313c7e13");
 $signPackage = $jssdk->GetSignPackage();
 ?>
-
 <html>
 	<head>
 		<title>首页</title>
@@ -19,7 +18,6 @@ $signPackage = $jssdk->GetSignPackage();
 		<script type="text/javascript" src="js1/touch.js"></script>
 		<script type="text/javascript" src="js1/baiduTemplate.js"></script>
 		<script type="text/javascript" src="js1/jquery.lazyload.min.js"></script>
-		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 		<!-- data-main 指定主程序入口 通常指定当前目录下的js文件 其他模块中的路径会参照主程序入口路径（路径问题）  -->
 		<script data-main = "port.js" type="text/javascript" src = "js2/require.js"></script>
 		
@@ -140,6 +138,7 @@ img{
       document.documentElement.style.fontSize = innerWidth/4.14 + "px";
     }
 	</script>
+
 	<script type="text/javascript">
 	wx.config({
     debug: true,
