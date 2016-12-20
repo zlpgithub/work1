@@ -84,6 +84,11 @@
 				 	$(".bubble").css("animation","");
 				 	clearInterval(t);
 				 }
+
+
+				 //调用微信接口，地图功能
+				 
+				 
 			});
 		});
 		
