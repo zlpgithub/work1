@@ -4,7 +4,6 @@ require_once "jssdk.php";
 $jssdk = new JSSDK("wx96022b9e2f37e2f4", "acca5fc1063b72de55bdcc89313c7e13");
 $signPackage = $jssdk->GetSignPackage();
 ?>
-
 <html>
 	<head>
 		<title>首页</title>
@@ -140,6 +139,7 @@ img{
       document.documentElement.style.fontSize = innerWidth/4.14 + "px";
     }
 	</script>
+
 	<script type="text/javascript">
 	wx.config({
     debug: true,
@@ -187,7 +187,8 @@ img{
 
 
 				 //调用微信接口，地图功能
-				 $("#mapbutton").on("tap",function(){
+				 wx.ready(function(){
+				 	$("#mapbutton").on("tap",function(){
 			console.log(1);
 			var latitude = 0;
 		var longitude = 0;
@@ -209,6 +210,8 @@ img{
 		    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
 		});
 })
+				 })
+			
 
 	//用火星坐标，国家保密插件
 	</script>

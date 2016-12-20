@@ -1,8 +1,8 @@
 <script type="text/html" id="market-figures">
 			<%for(var i in list){%>
-					<figure>
+					<figure id=<%=list[i].id%>>
 						<a href="#"><img class="lazy" data-original=<%=list[i].img%>></a>
-						<div class="bt">
+						<div class="market-bt">
 							<p><%=list[i].name%></p>
 							<p><span>精选</span></p>
 							<p><%=list[i].specifics%></p>

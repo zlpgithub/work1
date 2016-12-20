@@ -88,17 +88,17 @@ img{
 	border-left:0.06rem solid #ffd600;
 }
 /*主体右边部分*/
-.main-right{
+.market-main-right{
 	float: right;
 	/*position: absolute;
 	top: 0.59rem;
 	right: 0;*/
 	background: #fff;
 }
-.main-right-tp2{
+.market-main-right-tp2{
 	height: 0.52rem;
 }
-.main-right-tp{
+.market-main-right-tp{
 	position: fixed;
 	top: 0.59rem;
 	right: 0;
@@ -109,7 +109,7 @@ img{
 	display: flex;
 	border-bottom: 1px solid #e0e0e0;
 }
-.main-right-tp span{
+.market-main-right-tp span{
 	display: block;
 	width: 50%;
 	height: 0.23rem;
@@ -120,35 +120,35 @@ img{
 	background: url(../../img/xia.png) no-repeat 1.2rem center;
 	background-size: 0.13rem 0.08rem;
 }
-.main-right-bt{
+.market-main-right-bt{
 }
-.main-right-bt figure{
+.market-main-right-bt figure{
 	display: flex;
 	border-top: 1px solid #e0e0e0;
 	padding: 0.1rem 0.12rem 0.09rem 0;
 }
-.main-right-bt figure a{
+.market-main-right-bt figure a{
 	width: 1.16rem;
 	height: 0.9rem;
 	display: inline-block;	
 }
-.main-right-bt figure a img{
+.market-main-right-bt figure a img{
 	width: 1.16rem;
 	height: 0.9rem;
 }
-.bt{
+.market-bt{
 	width: 1.8rem;
 	height: 0.9rem;
 	line-height: 0.24rem;
 	position: relative;
 }
-.bt p:first-of-type{
+.market-bt p:first-of-type{
 	font-size: 0.15rem;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.bt p:nth-of-type(2) span{
+.market-bt p:nth-of-type(2) span{
 	color: red;
 	display: inline-block;
 	border: 1px solid red;
@@ -157,19 +157,19 @@ img{
 	padding: 0.01rem 0.03rem;
 	line-height: 0.15rem;
 }
-.bt p:nth-of-type(3){
+.market-bt p:nth-of-type(3){
 	font-size: 0.16rem;
 	color: grey;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.bt p:nth-of-type(4) span:last-child{
+.market-bt p:nth-of-type(4) span:last-child{
 	color: grey;
 	text-decoration: line-through;
 	font-size: 0.15rem;
 }
-.bt p:nth-of-type(4) span:first-child{
+.market-bt p:nth-of-type(4) span:first-child{
 	color: red;
 	text-decoration: none;
 	font-size: 0.15rem;
@@ -177,14 +177,14 @@ img{
 }
 
 /*左右加减*/
-.bt .market-goods-count{
+.market-bt .market-goods-count{
 	position: absolute;
 	right: 0;
 	top: 55%;
 	width: 1rem;
 
 }
-.bt .market-goods-count .market-count{
+.market-bt .market-goods-count .market-count{
 	visibility: hidden;
 	display: inline-block;
 	position: absolute;
@@ -196,7 +196,7 @@ img{
 	text-align: center;
 	
 }
-.bt .market-goods-count .market-cancel{
+.market-bt .market-goods-count .market-cancel{
 	position: absolute;
 	left: 0;
 	
@@ -214,9 +214,8 @@ img{
 	background-size: 200% 100%;
 	background-position: left center;
 }
-.bt .market-goods-count .market-buy{
+.market-bt .market-goods-count .market-buy{
 	position: absolute;
-	
 	right: 0;
 	z-index: 2;
 	display: inline-block;
