@@ -187,7 +187,8 @@ img{
 
 
 				 //调用微信接口，地图功能
-				 $("#mapbutton").on("tap",function(){
+				 wx.ready(function(){
+				 	$("#mapbutton").on("tap",function(){
 			console.log(1);
 			var latitude = 0;
 		var longitude = 0;
@@ -209,6 +210,8 @@ img{
 		    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
 		});
 })
+				 })
+			
 
 	//用火星坐标，国家保密插件
 	</script>
